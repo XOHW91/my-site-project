@@ -1,8 +1,7 @@
 <template>
   <header class="main-header">
     <div class="logo">
-      <!-- 로고 이미지 -->
-      <img src="../assets/logo.png" alt="로고">
+      <i class="fas fa-heartbeat logo-icon"></i>
     </div>
     <!-- 네비게이션 메뉴 -->
     <nav class="main-nav">
@@ -20,7 +19,6 @@
         <!-- Information 링크 -->
         <li>
           <i class="fas fa-circle green"></i>
-          
           <router-link to="/information"> PROGRAMMING</router-link>
         </li>
         <li>
@@ -33,11 +31,11 @@
     <div class="right-icons">
       <!-- 검색 버튼 -->
       <button class="search-btn" @click="goToSearch">
-        <i class="fas fa-search"></i> 
+        <i class="fas fa-search" style="color: #2B2B2B;"></i> 
       </button>
       <!-- 메뉴 버튼 -->
       <button class="menu-btn" @click="goToMenu">
-        <i class="fas fa-bars"></i> 
+        <i class="fas fa-bars" style="color: #2B2B2B;"></i> 
       </button>
     </div>
   </header>
@@ -60,12 +58,12 @@ const goToMenu = () => {
 </script>
 
 <style scoped>
-.fas.fa-search {
-  color: #4EC9B0;
+.fas.fa-heartbeat,
+.fas.fa-signal {
+  font-size: 36px;
+  color: #4EC9B0; /* 로고 아이콘 색상 */
 }
-.fas.fa-bars {
-  color: #569CD6;
-}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -73,13 +71,27 @@ const goToMenu = () => {
   padding: 10px 20px;
   background-color: #1E1E1E;
   color: #0e0d0d;
-  /* width: 80%;
-  margin: 0 auto; */
 }
 
-.logo img {
-  height: 40px;
-  padding: 0 0 0 30px ;
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logo-icon {
+  margin-right: 10px;
+  animation: shake 0.5s infinite alternate; /* 애니메이션 적용 */
+}
+
+/* 좌우로 흔들리는 키프레임 애니메이션 */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px); /* 좌우로 흔들리는 정도 */
+  }
 }
 
 .main-nav ul {

@@ -7,7 +7,7 @@
         <p><i class="fas fa-comment"></i> <strong>kakao ID</strong> <span class="orange">so4368</span></p>
       </div>
       <div class="right">
-        <img src="/" alt="Footer Image">
+        <img src="../assets/hw.png" alt="Footer Image">
       </div>
     </div>
   </footer>
@@ -39,20 +39,20 @@ strong {
 }
 
 .right img {
-  max-width: 100%;
-  height: auto;
+  max-width: 150px;
+  height: 150px;
 }
 
 .link {
-  color: #00AA00; /* 링크의 기본 색상 설정 */
+  color: #808080; /* 링크의 기본 색상 설정 */
   text-decoration: none; /* 밑줄 제거 */
 }
 
 .link:visited {
-  color: #00AA00; /* 방문한 링크의 색상 설정 */
+  color: #808080; /* 방문한 링크의 색상 설정 */
 }
 
 .orange {
-  color: #00AA00; /* 주황색으로 설정 */
+  color: #808080; /* 주황색으로 설정 */
 }
 </style>
