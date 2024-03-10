@@ -2,7 +2,7 @@
   <div class="container">
     <div class="square-box left-align">
       <table>
-        <tr><td class="left-cell" colspan="2"><i class="fas fa-code purple"></i> <span class="left-align-text"> INTRODUCE</span></td></tr>
+        <tr><td class="left-cell" colspan="2"><i class="fas fa-code purple"></i> <span class="typing-text" data-text="INTRODUCE ">INTRODUCE </span></td></tr>
         <tr><td class="left-cell bug-icon"><i class="fas fa-bug"></i></td><td>나는 박희원입니다.</td></tr>
         <tr><td class="left-cell">2</td><td>내용</td></tr>
         <tr><td class="left-cell">3</td><td>내용</td></tr>
@@ -14,7 +14,7 @@
     </div>
     <div class="square-box right-align">
       <table>
-        <tr><td class="left-cell" colspan="2"><i class="fas fa-wrench blue"></i> <span class="left-align-text"> SKILL</span></td></tr>
+        <tr><td class="left-cell" colspan="2"><i class="fas fa-wrench blue"></i> <span class="typing-text" data-text="SKILL ">SKILL </span></td></tr>
         <tr><td class="left-cell">1</td><td></td></tr>
         <tr><td class="left-cell">2</td><td>Java · JSP · MVC </td></tr>
         <tr><td class="left-cell"><i class="fas fa-circle red circle-red-icon"></i></td><td>Spring boot · Spring Security · Spring JPA </td></tr>
@@ -102,4 +102,32 @@ td:nth-child(even) {
 .blue {
   color: #00AA00; /* 파란색으로 변경 */
 }
+
+.typing-text {
+  overflow: hidden; /* 텍스트 내용 숨김 */
+  border-right: .15em solid orange; /* 테두리 설정 */
+  white-space: nowrap; /* 줄 바꿈 방지 */
+  margin: 0 auto; /* 가운데 정렬 */
+  animation: typing 2s steps(30, end), blink-caret .5s step-end infinite alternate; /* 애니메이션 설정 */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 </style>
