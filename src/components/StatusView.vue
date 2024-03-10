@@ -75,6 +75,13 @@ h3 {
   border-radius: 8px; /* 라운드 처리 */
   margin-left: 10px;
   margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: rotate(-3deg);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* 박스 1 상위 정렬 */

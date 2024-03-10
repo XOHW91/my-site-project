@@ -7,7 +7,7 @@
       </div>
       <div class="search-bar">
         <!-- 검색바 요소 -->
-        <input type="text" placeholder="Search..." v-model="searchQuery">
+        <input type="text" placeholder=" Search value..." v-model="searchQuery">
         <button class="search-btn" @click="goToSearch">
           <i class="fas fa-search"></i> <!-- 돋보기 아이콘 -->
         </button>
